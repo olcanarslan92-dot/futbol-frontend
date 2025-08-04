@@ -2,10 +2,6 @@ const BASE_URL = 'https://futbol-api-backend.onrender.com/api';
 
 export const getLeagues = async () => {
   const res = await fetch(`${BASE_URL}/leagues`);
-  return res.json();
-};
-
-export const getLiveScores = async () => {
-  const res = await fetch(`${BASE_URL}/live`);
-  return res.json();
+  const data = await res.json();
+  return data;
 };
