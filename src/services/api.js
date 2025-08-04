@@ -1,4 +1,4 @@
-const BASE_URL = 'https://futbol-api-backend.onrender.com';
+const BASE_URL = 'https://futbol-api-backend.onrender.com/api';
 
 export const getLeagues = async () => {
   const res = await fetch(`${BASE_URL}/leagues`);
