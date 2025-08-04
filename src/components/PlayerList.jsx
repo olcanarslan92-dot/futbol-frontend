@@ -8,7 +8,7 @@ function PlayerList({ teamId }) {
 
     const fetchPlayers = async () => {
       try {
-        const res = await fetch(`http://localhost:5000/api/players?team=${teamId}&season=2023`);
+        const res = await fetch(`https://futbol-api-backend.onrender.com/api/players?team=${teamId}&season=2023`);
         const data = await res.json();
         setPlayers(data.response);
       } catch (err) {
